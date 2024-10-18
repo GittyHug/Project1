@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-family: "DM Sans", sans-serif;
+}
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 85%;
+  /* height: 150px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid black; */
+}
+
+.logo {
+  width: 150px;
+  /* height: 50px; */
+  display: flex;
+  align-items: center;
+}
+
+.navigations {
+  /* height: 50px; */
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+nav {
+  width: 100px;
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.cart-header{
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  background-color: #d99965;
+  border-radius: 50%;
+  position: relative;
+}
+.cart-header img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cart-count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: orangered;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.signin button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d99965;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+}
+
+.hero{
+    width: 85%;
+    /* height: 800px; */
+    /* background-color: red; */
+    display: flex;
+    margin-top: 70px;
+}
+
+.imghol{
+    width: 50%;
+    height: 800px;
+    background-color: gray;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.imghol img{
+    height: 100%;
+    width: 100%;
+}
+
+.txthol{
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.text{
+  padding: 40px 30px 40px 40px;
+}
+
+.detail_hol h4{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.detail_hol h2{
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+.detail_hol h3{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+.detail_hol p{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.quantity{
+  margin-bottom: 50px;
+}
+
+/* .s-quantity{
+  display: flex;
+  align-items: center;
+}
+
+.s-quantity h3{
+  width: 70px;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.s-quantity input{
+  background-color: white;
+  border: 0;
+  outline: 0;
+  padding: 2px 2px 2px 15px;
+  border-radius: 12px;
+  width: 50px;
+} */
+
+.rate {
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.rate h4 {
+  cursor: pointer;
+}
+
+.rate p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sub-btn{
+  padding: 0 30px;
+}
+
+.addtocart{
+  width: 45%;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  cursor: pointer;
+}
+
+.wish{
+  width: 45%;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  cursor: pointer;
+  transition: 0.6s;
+  background-color: white;
+}
+
+.wish:hover{
+  background-color: orange;
+}

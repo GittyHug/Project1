@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="homepage">
+        <header>
+            <div class="logo">
+                <h2><span style="color: #3f5876; font-size: 35px;">P</span>ets<span style="color: #3f5876; font-size: 35px;">V</span>ania</h2>
+            </div>
+            <div class="navigations" id="nav-menu">
+                <a href="./home.html"><nav>HOME</nav></a>
+                <a href="../Product/product.html"><nav>PRODUCT</nav></a>
+                <a href="../category 1/Dogs.html"><nav>CATEGORY</nav></a>
+            </div>
+            <div class="login">
+                <a href="../cart/cart1.html">
+                  <div class="cart-header">
+                    <img src="../image/cart-shopping-svgrepo-com (1).svg" alt="">
+                    <span id="cart-count" class="cart-count">0</span>
+                  </div>
+                </a>
+                <div class="signin" id="signin">
+                  <a href="/index.html" id="signin-btn"> <button>Sign in</button></a>
+                  <a href="/index.html" id="logout-btn" style="display: none;"><button>Logout</button></a>
+                </div>
+                <div class="hamburger cart-header" id="hamburg">
+                  <img src="../image/hamburger.svg" alt="" />
+                </div>
+              </div> 
+        </header>
+        <div class="homearea">
+            <div class="imageholder">
+                <img src="../image/Pets__Cavapoo_pup_and_ginger_kitten_on_brown_background-removebg-preview.png" alt="">
+            </div>
+            <div class="textholder">
+                <div class="textarea">
+                    <h3>STAY <span style="color: #3f5876; font-size: 25px;">PAW</span>SITIVE</h3>
+                    <h2>"Until one has loved an animal, <br>A part of one's soul remains <br>unawakened."</h2>
+                    <a href="../Product/product.html"><button class="btn1"><h4>SHOP NOW!</h4></button></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="section1">
+        <div class="heading">
+            <h1>CATEGORY</h1>
+        </div>
+        <div class="seg1">
+            <div class="one">
+                <img src="../image/Sweet doggo ✨.jpg" alt="">
+                <div class="content_one">
+                    <a href="../category 1/Dogs.html"><h2>Dogs</h2></a>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/𖥻 ִ ˚ baby ginger cat ! ˚ꔛ_ ◦.jpg" alt="">
+                <div class="content_one">
+                    <a href="../category 1/Cats.html"><h2>Cats</h2></a>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/Fluffy Hamsters 🐹.jpg" alt="">
+                <div class="content_one">
+                    <h2>Hamas</h2>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/20+ Beautiful Animals We Can’t Stop Staring At.jpg" alt="">
+                <div class="content_one">
+                    <a href="../category 1/Birds.html"><h2>Birds</h2></a>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/Creative Cat food packaging design.jpg" alt="">
+                <div class="content_one">
+                    <a href="../category 1/meal.html"><h2>Meals</h2></a>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/download (1).jpg" alt="">
+                <div class="content_one">
+                    <h2>Toys</h2>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/download.jpg" alt="">
+                <div class="content_one">
+                    <h2>Beddings</h2>
+                </div>
+            </div>
+            <div class="one">
+                <img src="../image/Dogg-oh! 8 in 1 Complete Professional Dog grooming Kit _ Dog grooming supplies _ Dog Brush _ Slicker Brush _ Dog Brush For Long Haired Dogs _ Cat & Dog Grooming Supplies _ Deshedding Brush.jpg" alt="">
+                <div class="content_one">
+                    <h2>Kits</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="heading1">
+            <h1>Our Best Sellers</h1>
+        </div>
+        <div class="seg2">
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Orthopedic_Flannel_Dog_Sofa_-_XXL___Terracotta-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Dog Sofa</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3" onclick="addToCart('Dog Sofa')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Retractable_Dog_Leash__IDEAPRO_26_ft_110_lbs_Walking_Dog_Leash_Heavy_Duty_Tangle_Free_Nylon_Dog_Leash_with_LED_Detachable_Flashlight_for_Medium_Large_Dog__Black_-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Retractable Leash</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Whiskas_Meaty_Selections_Chicken_And_Turkey_Flavors_Dry_Cat_Food_15_Pounds__Discontinued_By_Manufacturer_-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Whiskas Cats Meal</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Ferplast_Duna_Fun_Multi-Tier_Hamster_Cage-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Hamsters Cages</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Pet_Grooming_and_Deshedding_Glove-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Grooming Gloves</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/12_Festive_Christmas_Dog_Outfits_to_Get_Your_Pet_in_the_Holiday_Spirit-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Merry Dog Outfits</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Amazon_Basics_Open_Top_Cat_Litter_Box_-_19_x_9_x_16_Inches__Beige-removebg-preview.png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Cats Litter Box</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="imagestash">
+                    <img src="../image/Pieces_Rabbit_Grooming_Clipper_Hamster-removebg-preview (1).png" alt="" onclick="viewProductDetails()">
+                </div>
+                <div class="textstash">
+                    <div class="tx1">Rabbits Grooming Kits</div>
+                    <div class="other">
+                        <h3>₦10,000</h3>
+                        <button class="btn3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="section3hol">
+            <div class="textin">
+                <div class="texta">
+                    <h3>You are <span style="color: #3f5876;">PAW</span>some</h3>
+                    <h2>"Cats are intended to teach us that not everything in nature has a function."</h2>
+                </div>
+            </div>
+            <div class="imagein">
+                <img src="../image/pexels-pixabay-45170-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="segment">
+            <div class="stand">
+                <h2><span style="color: #3f5876; font-size: 35px;">P</span>ets<span style="color: #3f5876; font-size: 35px;">V</span>ania</h2>
+                <!-- <p>PAWsitive Vibes Only</p> -->
+                 <h3>About Us</h3>
+                 <p>It's not what we have in life, but who we have in our lives that matters</p>
+                 <h3>Contact Us</h3>
+                 <div class="svg">
+                    <div class="svg1">
+                        <img src="../image/call-receive-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <p>+91 999 999 999</p>
+                    </div>
+                 </div>
+                 <div class="svg">
+                    <div class="svg1">
+                        <img src="../image/call-receive-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <p>johndoe@gmail.com</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="stand1">
+                <h3>Information</h3>
+                <p>About Us</p>
+                <p>More Search</p>
+                <p>Blogs</p>
+                <p>Testimonals</p>
+                <p>Events</p>
+            </div>
+            <div class="stand2">
+                <h3>Helpful Links</h3>
+                <p>Services</p>
+                <p>Supports</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <!-- <div class="stand3"></div> -->
+        </div>
+        <div class="last">
+            <div class="red">
+                <img src="../image/facebook-svgrepo-com (4).svg" alt="">
+                <img src="../image/twitter-svgrepo-com (2).svg" alt="">
+                <img src="../image/instagram-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        // add to cart function that saves to localStorage
+        const addToCart = (productName, price, imageUrl) => {
+          // Fetch cart from localStorage or initialize as an empty array
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const existingProduct = cart.find((item) => item.name === productName);
+  
+          if (existingProduct) {
+            // Increase quantity if product exists
+            existingProduct.quantity += 1;
+          } else {
+            // Add new product to the cart if it doesn't exist
+            const newProduct = {
+              name: productName,
+              price: price,
+              image: imageUrl,
+              quantity: 1,
+            };
+            cart.push(newProduct);
+          }
+  
+          localStorage.setItem("cart", JSON.stringify(cart));
+  
+          Swal.fire({
+            title: "Added to Cart!",
+            text: `${productName} has been added to your cart.`,
+            icon: "success",
+            confirmButtonText: "Cool!",
+            timer: 2000, // Set the timer to 3000ms (3 seconds)
+            timerProgressBar: true, // Show a progress bar during the timer
+          });
+  
+          // Update cart count in the cart-icon
+          updateCartCount();
+        };
+  
+        const viewProductDetails = (name, price, imageUrl) => {
+          const productDetails = {
+            name: name,
+            price: price,
+            imageUrl: imageUrl,
+          };
+          localStorage.setItem("selectedProduct", JSON.stringify(productDetails));
+          // Redirect to product details page
+          window.location.href = "/detail page/detail.html";
+        };
+  
+        // function to update cart icon count
+        const updateCartCount = () => {
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const totalItem = cart.reduce((acc, item) => acc + item.quantity, 0);
+          document.getElementById("cart-count").textContent = totalItem;
+  
+          const cartCountElement = document.getElementById("cart-count"); // Select the cart count element
+          cartCountElement.textContent = totalItem; // Update the text content with total items
+  
+          // Show or hide the badge based on totalItem
+          if (totalItem > 0) {
+            cartCountElement.style.display = "inline-block"; // Show badge if count > 0
+          } else {
+            cartCountElement.style.display = "none"; // Hide badge if count is 0
+          }
+        };
+        window.onload = updateCartCount;
+  
+        document.getElementById("hamburg")?.addEventListener("click", () => {
+          document.getElementById("nav-menu")?.classList.toggle("active");
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./Dogs.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="homepage">
+        <header>
+            <div class="logo">
+                <h2><span style="color: #3f5876; font-size: 35px;">P</span>ets<span style="color: #3f5876; font-size: 35px;">V</span>ania</h2>
+            </div>
+            <div class="navigations" id="nav-menu">
+                <a href="../Home/home.html"><nav>HOME</nav></a>
+                <a href="../Product/product.html"><nav>PRODUCT</nav></a>
+                <a href="./Dogs.html"><nav>CATEGORY</nav></a>
+            </div>
+            <div class="login">
+                <a href="../cart/cart1.html">
+                  <div class="cart-header">
+                    <img src="../image/cart-shopping-svgrepo-com (1).svg" alt="">
+                    <span id="cart-count" class="cart-count">0</span>
+                  </div>
+                </a>
+                <div class="signin" id="signin">
+                  <a href="/index.html" id="signin-btn"> <button>Sign in</button></a>
+                  <a href="/index.html" id="logout-btn" style="display: none;"> <button>Log out</button></a>
+                </div>
+                <div class="hamburger cart-header">
+                  <img src="../image/hamburger.svg" alt="" />
+                </div>
+              </div> 
+        </header>
+    </div>
+    <div class="section1">
+        <div class="seg2">
+            <a href="./Dogs.html"><div class="navx">Dogs</div></a>
+            <a href="./Cats.html"><div class="navx">Cats</div></a>
+            <a href="./Fish.html"><div class="navx">Fish</div></a>
+            <a href="./Birds.html"><div class="navx">Birds</div></a>
+            <a href="./kernels.html"><div class="navx">Kernels</div></a>
+            <a href="./meal.html"><div class="navx">Meals</div></a>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/download__6_-removebg-preview.png" alt=""  onclick="viewProductsDetails('Golden Retriever', 150000, '../image/download__6_-removebg-preview.png')"/>
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Golden Retriever</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2" onclick="addToCart('Golden Retriever', 150000, '../image/download__6_-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/download__2_-removebg-preview.png" alt=""  onclick="viewProductsDetails('Chihuahua', 150000, '../image/download__2_-removebg-preview.png')"/>
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Chihuahua</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('Chihuahua', 150000, '../image/download__2_-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/Premium_Photo___Puppy_rottweiler_in_front_of_white_background-removebg-preview.png" alt=""  onclick="viewProductsDetails('Rottweiler', 150000, '../image/Premium_Photo___Puppy_rottweiler_in_front_of_white_background-removebg-preview.png')"/>
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Rottweiler</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('Rottweiler', 150000, '../image/Premium_Photo___Puppy_rottweiler_in_front_of_white_background-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/download__3_-removebg-preview.png" alt=""  onclick="viewProductsDetails('German Shepherd', 150000, '../image/download__3_-removebg-preview.png')">
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>German Shepherd</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('German Shepherd', 150000, '../image/download__3_-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/Dog__Brindle-and-white_Whippet_pup-removebg-preview.png" alt=""  onclick="viewProductsDetails('Grey Hound', 150000, '../image/Dog__Brindle-and-white_Whippet_pup-removebg-preview.png')">
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Grey Hound</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('Grey Hound', 150000, '../image/Dog__Brindle-and-white_Whippet_pup-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/download__4_-removebg-preview.png" alt=""  onclick="viewProductsDetails('Husky', 150000, '../image/download__4_-removebg-preview.png')">
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Husky</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2" onclick="addToCart('Husky', 150000, '../image/download__4_-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/download__5_-removebg-preview.png" alt=""  onclick="viewProductsDetails('Kangal', 150000, '../image/download__5_-removebg-preview.png')">
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Kangal</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('Kangal', 150000, '../image/download__5_-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/Premium_Photo___Cane_Corso_dog-removebg-preview.png" alt=""  onclick="viewProductsDetails('Cane Corso', 150000, '../image/Premium_Photo___Cane_Corso_dog-removebg-preview.png')">
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Cane Corso</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('Cane Corso', 150000, '../image/Premium_Photo___Cane_Corso_dog-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="ins">
+            <div class="insimage">
+                <img src="../image/gorgeous_Pitbull-removebg-preview.png" alt=""  onclick="viewProductsDetails('Pit Bull', 150000, '../image/gorgeous_Pitbull-removebg-preview.png')">
+            </div>
+            <div class="instext">
+                <div class="txtt">
+                    <p>Pit Bull</p>
+                    <h3>₦150,000</h3>
+                </div>
+                <div class="txtx">
+                    <button class="btn2"  onclick="addToCart('Pit Bull', 150000, '../image/gorgeous_Pitbull-removebg-preview.png')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="segment">
+            <div class="stand">
+                <h2><span style="color: #3f5876; font-size: 35px;">P</span>ets<span style="color: #3f5876; font-size: 35px;">V</span>ania</h2>
+                <!-- <p>PAWsitive Vibes Only</p> -->
+                 <h3>About Us</h3>
+                 <p>It's not what we have in life, but who we have in our lives that matters</p>
+                 <h3>Contact Us</h3>
+                 <div class="svg">
+                    <div class="svg1">
+                        <img src="../image/call-receive-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <p>+91 999 999 999</p>
+                    </div>
+                 </div>
+                 <div class="svg">
+                    <div class="svg1">
+                        <img src="../image/call-receive-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <p>johndoe@gmail.com</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="stand1">
+                <h3>Information</h3>
+                <p>About Us</p>
+                <p>More Search</p>
+                <p>Blogs</p>
+                <p>Testimonals</p>
+                <p>Events</p>
+            </div>
+            <div class="stand2">
+                <h3>Helpful Links</h3>
+                <p>Services</p>
+                <p>Supports</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <!-- <div class="stand3"></div> -->
+        </div>
+        <div class="last">
+            <div class="red">
+                <img src="../image/facebook-svgrepo-com (4).svg" alt="">
+                <img src="../image/twitter-svgrepo-com (2).svg" alt="">
+                <img src="../image/instagram-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // add to cart function that saves to localStorage
+        const addToCart = (productName, price, imageUrl) => {
+    // Fetch cart from localStorage or initialize as an empty array
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingProduct = cart.find(item => item.name === productName);
+  
+    if (existingProduct) {
+      // Increase quantity if product exists
+      existingProduct.quantity += 1;
+    } else {
+      // Add new product to the cart if it doesn't exist
+      const newProduct = {
+        name: productName,
+        price: price,
+        image: imageUrl,
+        quantity: 1
+      };
+      cart.push(newProduct);
+    }
+  
+    localStorage.setItem("cart", JSON.stringify(cart));
+  
+  
+    Swal.fire({
+            title: "Added to Cart!",
+            text: `${productName} has been added to your cart.`,
+            icon: "success",
+            confirmButtonText: "Cool!",
+            timer: 2000, // Set the timer to 3000ms (3 seconds)
+            timerProgressBar: true,
+          });
+    // Update cart count in the cart-icon
+    updateCartCount();
+  };
+  
+  const viewProductDetails = (name, price, imageUrl) => {
+    const productDetails = {
+      name: name,
+      price: price,
+      imageUrl: imageUrl
+    };
+    localStorage.setItem('selectedProduct', JSON.stringify(productDetails));
+    // Redirect to product details page
+    window.location.href = '/Detail/detai.html';
+  }
+  
+  
+        // function to update cart icon count
+        const updateCartCount = () => {
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const totalItem = cart.reduce((acc, item) => acc + item.quantity, 0);
+          document.getElementById("cart-count").textContent = totalItem;
+          
+         const cartCountElement = document.getElementById("cart-count"); // Select the cart count element
+      cartCountElement.textContent = totalItem; // Update the text content with total items
+  
+      // Show or hide the badge based on totalItem
+      if (totalItem > 0) {
+          cartCountElement.style.display = "inline-block"; // Show badge if count > 0
+      } else {
+          cartCountElement.style.display = "none"; // Hide badge if count is 0
+      }
+        };
+        window.onload = updateCartCount;
+  
+        document.getElementById("hamburg")?.addEventListener("click", () => {
+          document.getElementById("nav-menu")?.classList.toggle("active");
+        });
+      </script>
+</body>
+</html>
