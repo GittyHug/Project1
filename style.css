@@ -70,7 +70,7 @@ a {
   gap: 20px;
 }
 .input_holder {
-  width: 80%;
+  /* width: 80%; */
   height: 160px;
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@ a {
 
 .input1 {
   height: 30px;
-  width: 350px;
+  width: 300px;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -157,7 +157,7 @@ button:hover {
 
 @media (max-width: 480px) {
   .input1 {
-    width: 300px;
+    width: 100px;
   }
 
   .signin_text {
@@ -171,5 +171,10 @@ button:hover {
 
   .h2_holder {
     margin: 0px 0px 40px 0px;
+  }
+
+  .remember{
+    width: 200px;
+    height: 50px;
   }
 }
