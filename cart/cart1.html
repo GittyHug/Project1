@@ -164,7 +164,7 @@
       function incrementQuantity(index) {
         cart[index].quantity += 1;
         cart[index].total = cart[index].quantity * cart[index].price;
-        //save uodated cart to localstorage
+        //save updated cart to localstorage
         localStorage.setItem("cart", JSON.stringify(cart));
         // re-display the updated cart
         displayCartItems();
@@ -174,7 +174,7 @@
         if (cart[index].quantity > 1) {
           cart[index].quantity -= 1;
           cart[index].total = cart[index].quantity * cart[index].price;
-          //save uodated cart to localstorage
+          //save updated cart to localstorage
           localStorage.setItem("cart", JSON.stringify(cart));
           // re-display the updated cart
           displayCartItems();
