@@ -16,9 +16,9 @@ function validateForm(event) {
     let confirmPassword = document.getElementById("confirmPassword").value;
 
     // Username validation (alphanumeric and between 3 and 15 characters)
-    let usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
+    let usernameRegex = /^[a-zA-Z0-9]{6,10}$/;
     if (!usernameRegex.test(username)) {
-      throw new Error("Username must be alphanumeric and between 3 and 15 characters.");
+      throw new Error("Username must be alphanumeric and between 6 and 10 characters.");
     }
 
     // Email validation
@@ -28,9 +28,9 @@ function validateForm(event) {
     }
 
     // Password validation (at least 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character)
-    let passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    let passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
     if (!passwordRegex.test(password)) {
-      throw new Error("Password must be at least 8 characters long, contain 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.");
+      throw new Error("Password must be at least 6 characters long, contain 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.");
     }
 
     // Confirm password validation
